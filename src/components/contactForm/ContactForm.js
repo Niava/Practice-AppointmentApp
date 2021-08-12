@@ -25,8 +25,8 @@ export const ContactForm = ({
       <input 
         type="tel" 
         value={phone} 
-        placeholder="+614XX-XXX-XXX"
-        pattern = "^(\+[6][1]*(\[0-9]*\|-[0-9]*-))?[0]?[1-9][0-9\- ]*$"
+        placeholder="04XX-XXX-XXX"
+        pattern = "^\(?[\d]{4}[\s-]?[\d]{3}[\s-]?[\d]{3}$"
         onChange = {({target}) => {setPhone(target.value)}}
       />
       </label>
